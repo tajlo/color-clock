@@ -1,16 +1,4 @@
-/*
-  This function takes in two parameters: a number, and a string.
-  The number represents the amount of hours/minutes/seconds.
-  The string represents the unit, and is one of
-    * "hour"
-    * "minute"
-    * "second"
 
-  It returns a whole number value from 0-255 representing the
-  relative CSS RGB value of that time period.
-
-  It's pre-written for you. Best to not muck around with it.
-*/
 var convertTimeframe = function(amount, unit) {
 
   switch (unit) {
@@ -64,7 +52,7 @@ $(document).on("ready", function (){
 
   var moments = (moment().format('ss'),"seconds")
   var borderTwerk = function(){
-      var border = css("border-bottom").moments
+      var border = $(".clock").css("border-bottom", "width").moments
   }
  
   $(".clock").on("click", function (){
@@ -82,5 +70,5 @@ $(document).on("ready", function (){
 })
 
   
-  //implement time zones 
+
 
